@@ -7,8 +7,8 @@ open class InputChecker {
 
     var errMsg: String = ""
 
-    open fun canCalc(input: InputNumbers): Boolean {
-        val validator = Validator()                     //   <---- It depends on the validator class
+    open fun canCalc(input: InputNumbers, validator: Validator): Boolean {    //    <-- DI
+        val validator = Validator()
         if (!validator.isValidNumber(input.num1)) {
             errMsg = "Input Number"
             return false
