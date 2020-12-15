@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UnitTestDemo</string>
+    <string name="number1">Number1</string>
+    <string name="number2">Number2</string>
+    <string name="calculate">Calculate</string>
+    <string name="result">Result</string>
+</resources>
