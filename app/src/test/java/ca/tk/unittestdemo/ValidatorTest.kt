@@ -22,4 +22,11 @@ class ValidatorTest : TestCase() {
         val actual = target.isValidNumber("A")
         assertThat(actual, `is`(false))
     }
+
+    @Test
+    fun isValidNum_givenNum_returnsTrue() {
+        val target = Validator()
+        val actual = target.isValidNumber("7")
+        assertThat(actual, `is`(true))
+    }
 }
